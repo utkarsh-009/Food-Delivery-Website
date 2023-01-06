@@ -1,0 +1,79 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar{
+    /* to bring navbar objects in one row */
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: logo and Image */
+#logo{
+    margin: 0px 0px;
+}
+
+#logo img{
+    
+    /* Setting height (size) of image */
+    height: 110px;
+    margin: 0px 0px; 
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+/* Adding Strip under navbar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+
+    /* z-index set to -1 inorder to stack this strip below navbar */
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+
+    /* To remove bullets in list */
+    list-style: none;
+    font-size: 1.2rem;    
+}
+
+/* NOTE: padding is added in anchor tag inorder to add special effects to anchor tags */
+#navbar ul li a{
+
+    color: white ;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+
+    /* To remove underline inside the text of anchor tag */
+    text-decoration: none;
+}
+
+/* Effects After Hovering */
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
