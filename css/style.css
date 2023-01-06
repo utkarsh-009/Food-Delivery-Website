@@ -34,10 +34,6 @@
     position: relative;
 }
 
-#navbar ul{
-    display: flex;
-}
-
 /* Adding Strip under navbar */
 #navbar::before{
     content: "";
@@ -50,6 +46,10 @@
     /* z-index set to -1 inorder to stack this strip below navbar */
     z-index: -1;
     opacity: 0.4;
+}
+
+#navbar ul{
+    display: flex;
 }
 
 #navbar ul li{
@@ -76,4 +76,46 @@
     color: black;
     background-color: white;
 }
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('/images/pizza.jpg') no-repeat center center/cover;
+    
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+
+    /* z-index s et to -1 inorder to stack this strip below navbar */
+    z-index: -1;
+    opacity: 0.9;  
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Utitlity Classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+
 
