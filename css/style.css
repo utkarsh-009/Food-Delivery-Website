@@ -50,6 +50,7 @@
 
 #navbar ul{
     display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 
 #navbar ul li{
@@ -97,23 +98,26 @@
 
     /* z-index s et to -1 inorder to stack this strip below navbar */
     z-index: -1;
-    opacity: 0.9;  
+    opacity: 0.85;  
 }
 
 #home h1{
     color: white;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #home p{
     color: white;
     text-align: center;
     font-size: 1.5rem;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Utitlity Classes */
 .h-primary{
-    font-size: 2.5rem;
+    font-size: 2.5 rem;
     padding: 12px;
 }
 
