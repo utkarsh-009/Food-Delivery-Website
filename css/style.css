@@ -121,5 +121,17 @@
     padding: 12px;
 }
 
+.btn{
+
+    /* Generally we give padding to button initially */
+    padding: 5px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px; 
+}
+
 
 
