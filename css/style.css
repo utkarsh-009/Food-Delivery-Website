@@ -15,6 +15,8 @@
     /* to bring navbar objects in one row */
     display: flex;
     align-items: center;
+    height: 75px;
+    position: relative;
 }
 
 /* Navigation Bar: logo and Image */
@@ -30,9 +32,6 @@
 }
 
 /* Navigation Bar: List Styling */
-#navbar{
-    position: relative;
-}
 
 /* Adding Strip under navbar */
 #navbar::before{
@@ -41,7 +40,10 @@
     
     position: absolute;
     height: 100%;
-    width: 100%; 
+    width: 100%;
+    
+    top: 0px;
+    left: 0px;
 
     /* z-index set to -1 inorder to stack this strip below navbar */
     z-index: -1;
@@ -82,10 +84,15 @@
 #home{
     display: flex;
     flex-direction: column;
+    
     padding: 5px 200px;
-    height: 400px;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 #home::before{
@@ -115,10 +122,47 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Services Section */
+#services{
+    margin: 30px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px; 
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: wheat;
+}
+
+
+#services .box img{
+    height: 500px;
+    
+    /* To center the img: 1.) set display: block 2.) set margin: auto */
+    display: block;
+    margin: auto;
+    
+}
+#services .box p{
+    font-family: 'Roboto', sans-serif;
+}
+#services{}
+#services{}
+#services{}
+#services{}
+
 /* Utitlity Classes */
 .h-primary{
-    font-size: 2.5 rem;
+    font-size:  3rem;
     padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn{
@@ -136,5 +180,8 @@
     cursor: pointer;
 }
 
+.text-center{
+    text-align: center;
+}
 
 
