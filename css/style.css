@@ -131,6 +131,9 @@
     margin: 17px;
     font-size: 1.5rem;
     border-radius: 10px; 
+
+    /* Changes pointer after hovering over button */
+    cursor: pointer;
 }
 
 
