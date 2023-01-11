@@ -1,0 +1,83 @@
+/* Navigation */
+#navbar{
+    /* Keeping flex-direction as column for phone  */
+    flex-direction: column;
+}
+
+
+#navbar ul li a{
+    /* padding and font size to get rid of overflow at navbar */
+    font-size: 13px;
+    padding: 0px 5px;
+}
+
+/* Home Section */
+#home{
+    height: 300px;
+    padding: 5px 0px;
+}
+
+#home::before{
+    height: 450px; 
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services Section */
+#services{
+    /* Keeping flex-direction as column for phone  */
+    flex-direction: column;
+}
+
+#services .box img{
+    
+    height: 300px;
+    padding: 14px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Client Section */
+#clients{
+    flex-wrap: wrap;
+    /* Hides overflow*/
+    overflow: hidden;
+}
+
+#clients img{
+    height: 50px;
+}
+
+/* Contact Us Section */
+.contact-box{
+    width: 30%;
+}
+
+#contact-box .form-group label,
+#contact-box .form-group input{
+    font-size: 12px;
+}
+
+/* Footer */
+
+footer {
+    font-size: 10px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 13px;
+}
+
+.h-secondary{
+    font-size: 10px;
+}
+
+.btn{
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
